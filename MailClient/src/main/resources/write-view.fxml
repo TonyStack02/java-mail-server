@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="500.0" spacing="10.0"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="client.controller.WriteMailController">
+
+    <padding> <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" /> </padding>
+
+    <Label text="Scrivi Messaggio" styleClass="lbl-header" />
+
+    <Label text="Destinatario:" style="-fx-text-fill: #7f8c8d;" />
+    <TextField fx:id="recipientField" promptText="es. luigi@test.it, peach@test.it" />
+
+    <Label text="Oggetto:" style="-fx-text-fill: #7f8c8d;"/>
+    <TextField fx:id="subjectField" />
+
+    <Label text="Messaggio:" style="-fx-text-fill: #7f8c8d;"/>
+    <TextArea fx:id="messageArea" wrapText="true" VBox.vgrow="ALWAYS" />
+
+    <Button onAction="#onSendButton" text="INVIA MESSAGGIO ✉"
+            maxWidth="Infinity" styleClass="button, btn-success" />
+
+    <Label fx:id="errorLabel" styleClass="lbl-error" maxWidth="Infinity" alignment="CENTER"/>
+</VBox>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.controller.ServerController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="15.0" styleClass="header-box">
+            <Label text="MailServer Admin Console" styleClass="header-title" />
+            <HBox HBox.hgrow="ALWAYS" />
+            <Label text="Status: ONLINE (Port 8189)" style="-fx-font-weight: bold;"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="5.0" style="-fx-padding: 10;">
+            <Label text="SYSTEM LOG STREAM" style="-fx-text-fill: #bdc3c7; -fx-font-weight: bold;" />
+            <ListView fx:id="logList" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10.0" styleClass="footer-box">
+            <Label fx:id="lblCount" text="Eventi totali: 0" style="-fx-text-fill: white;" />
+            <Button onAction="#onClearLogClick" text="Pulisci Log 🗑" styleClass="button" />
+        </HBox>
+    </bottom>
+</BorderPane>

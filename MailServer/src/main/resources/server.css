@@ -1,0 +1,67 @@
+/* --- GLOBAL --- */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f1f3f4; /* Grigio Dashboard */
+}
+
+/* --- HEADER --- */
+.header-box {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 1);
+    -fx-padding: 15 25;
+    -fx-alignment: center-left;
+}
+
+.header-title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #202124;
+    -fx-font-weight: bold;
+}
+
+/* --- LOG LIST --- */
+.list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #dadce0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 3, 0, 0, 1);
+    -fx-padding: 10;
+}
+
+/* Le celle del log */
+.list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #3c4043;
+    -fx-font-family: 'Consolas', 'Monospaced'; /* Monospace sì, ma pulito */
+    -fx-font-size: 12px;
+    -fx-padding: 3 5;
+}
+
+.list-cell:even {
+    -fx-background-color: #f8f9fa; /* Zebra striping leggerissimo */
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #e8f0fe;
+    -fx-text-fill: #1967d2;
+}
+
+/* --- FOOTER --- */
+.footer-box {
+    -fx-padding: 15 25;
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: #d93025; /* Rosso Google */
+    -fx-border-color: #d93025;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #d93025;
+    -fx-text-fill: white;
+}

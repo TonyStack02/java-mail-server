@@ -1,0 +1,165 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+    -fx-background-color: #f6f8fc;
+}
+
+/* --- BOTTONI --- */
+.button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #5f6368;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #dadce0;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-transition: all 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #f1f3f4;
+    -fx-border-color: #dadce0;
+}
+
+/* Bottone per login, rispondi */
+.btn-primary {
+    -fx-background-color: #1a73e8;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(26, 115, 232, 0.3), 5, 0, 0, 2);
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1557b0;
+    -fx-effect: dropshadow(three-pass-box, rgba(26, 115, 232, 0.4), 8, 0, 0, 3);
+}
+
+
+.btn-success {
+    -fx-background-color: #1e8e3e;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(30, 142, 62, 0.3), 5, 0, 0, 2);
+}
+
+.btn-success:hover {
+    -fx-background-color: #137333;
+}
+
+/*bottone cancella*/
+.btn-danger {
+    -fx-background-color: #fff;
+    -fx-text-fill: #d93025;
+    -fx-border-color: #fce8e6;
+}
+.btn-danger:hover {
+    -fx-background-color: #fce8e6;
+    -fx-border-color: #d93025;
+}
+
+/* bottone aggiorna */
+.btn-warning {
+    -fx-background-color: #fff;
+    -fx-text-fill: #e37400;
+    -fx-border-color: #feefc3;
+}
+.btn-warning:hover {
+    -fx-background-color: #feefc3;
+    -fx-border-color: #e37400;
+}
+
+
+/* --- CAMPI DI TESTO --- */
+.text-field, .text-area {
+    -fx-background-color: white;
+    -fx-background-radius: 4px;
+    -fx-border-color: #dadce0;
+    -fx-border-radius: 4px;
+    -fx-padding: 10;
+    -fx-text-fill: #202124;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #1a73e8;
+    -fx-border-width: 2px;
+    -fx-background-color: #fff;
+}
+
+/* --- TABELLA --- */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 1); /* Ombra leggera tipo carta */
+    -fx-border-color: transparent;
+}
+
+/* L'intestazione  */
+.table-view .column-header-background {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1 0; /* Solo linea sotto */
+    -fx-border-color: #dadce0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #5f6368;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 10 0 10 0;
+}
+
+/*  righe della tabella */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #f1f3f4; /* Separatore sottile */
+    -fx-cell-size: 45px; /* Righe più alte e ariose */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e8f0fe; /* Azzurro chiarissimo (selezione Gmail) */
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: #1967d2; /* Testo blu scuro */
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f8f9fa;
+}
+
+
+/* --- ETICHETTE --- */
+.lbl-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #202124;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.lbl-header {
+    -fx-font-size: 18px;
+    -fx-text-fill: #202124;
+}
+
+.lbl-status-ok {
+    -fx-text-fill: #1e8e3e;
+    -fx-font-weight: bold;
+    -fx-background-color: #e6f4ea;
+    -fx-padding: 5 10;
+    -fx-background-radius: 15px;
+}
+
+.lbl-status-err {
+    -fx-text-fill: #d93025;
+    -fx-font-weight: bold;
+    -fx-background-color: #fce8e6;
+    -fx-padding: 5 10;
+    -fx-background-radius: 15px;
+}
+
+.lbl-error {
+    -fx-text-fill: #d93025;
+    -fx-font-size: 12px;
+}
